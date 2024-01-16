@@ -1,0 +1,182 @@
+/* here add the font femily */
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+:root {
+  --font-color: #475467;
+  --body-color: #f8fbff;
+  --border-color: #e3e7ed;
+  --color: #ffffff;
+}
+body {
+  background: var(--body-color);
+}
+.pickUsers{
+  font-size: 25px;
+  text-align: center;
+  margin: 20px 0 50px 0;
+  color: blue;
+  font-weight: bold;
+}
+/* chip input css */
+.chip-add-here{
+  max-width: 0 auto;
+  flex-wrap: wrap;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid blue;
+}
+.addedchip-input{
+  display: flex;
+  flex-wrap: wrap;
+}
+.custom-input{
+  margin-left: 10px;
+  border: none ;
+  padding: 10px;
+  font-size: 14px;
+  background: transparent;
+}
+.custom-input:focus{
+  outline: none;
+}
+.handle_input_div{
+  position: relative;
+}
+/* ChipInput.css */
+.chip-input-container {
+  background: transparent;
+  top: 40px;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  overflow-y: scroll;
+  /* Customize the scrollbar */
+  scrollbar-width: thin;
+  scrollbar-color: #718096 #f7fafc; /* thumb color and track color */
+
+  /* Webkit browsers (Chrome, Safari) */
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: #718096;
+    border-radius: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: #f7fafc;
+    border-radius: 5px;
+  }
+}
+
+.chip {
+  display: flex;
+  align-items: center;
+  background-color: #ffff;
+  padding:8px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.chip-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chip-info {
+  display: flex;
+  gap: 10px;
+}
+
+.chip-name {
+  font-weight: bold;
+}
+
+.chip-email {
+  color: #718096;
+}
+
+
+
+.input {
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #d2d6dc;
+  border-radius: 5px;
+}
+
+.item-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.item {
+  padding: 8px;
+  cursor: pointer;
+  border: 1px solid #d2d6dc;
+  border-radius: 5px;
+  margin: 2px;
+  background-color: #ffffff;
+}
+
+.item:hover {
+  background-color: #e2e8f0;
+}
+
+
+/* added chip css */
+.addedchip-input{
+  width: auto;
+}
+.addedchip {
+  display: flex;
+  align-items: center;
+  background-color: #e2e8f0;
+  justify-content: space-between;
+  /* padding: 5px; */
+  margin: 5px;
+  border-radius: 30px;
+  width: 210px; /* Fixed width */
+}
+
+.adeded-chip-image {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.added-info {
+  display: flex;
+  flex-direction: column;
+  color: #718096;
+}
+
+.added-name {
+  text-transform: capitalize;
+}
+
+.added-email {
+  color: #718096;
+}
+
+.chip-remove {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right:5px ;
+  cursor: pointer;
+  border: none;
+  color: #718096;
+  font-size: 18px;
+}
